@@ -1,0 +1,34 @@
+1_Datagrids com auto fill
+2_Dei duplo clique em uma tabela, e depois em "CMDs", ao tentar executar
+cheguei no seguinte erro: screnshot1(colocar um try catch)
+3_Fechar a janela de criação de tabelas após a criação da tabela
+4_Menu Strip de Atualizar os dados da tabela.
+5_tratamento de error MySql.
+
+Sugestões:
+
+1_Tamanho do Campo, na tela de criação de tabela, n ser obrigatório.
+
+
+
+
+
+Já Corrigi o 1 e 3.
+5 será feito posteriormente e o 2 se resolve com o acabamento do 5.
+
+
+IMPORTANTE: qdo a opção unsigned ta marcada, está impossivel criar
+a tabela, ja abri o prompt mysql, tentei de tudo, n deu certo.
+eu cheguei a colocar o comando ezatamente igual a class do c# estavá
+recebendo, o bug é tão sinistro, q qdo eu tiro o unsigned, funfa, qdo
+eu ponho, da erro, simples assim, se alguem for bom em MySQL, tenta
+descobrir pra min por favor.
+obs: Usa essa string aki(mesma q eu usei):
+"CREATE TABLE tbl_testee(asasas int(20) not null auto_increment unsigned primary key):"
+
+obs2: Marcão no item 4, eu até criei o menu, mas pra atualizar vai precisar do nome da tabela
+q está pegando direto no "lv" qdo o cara da duplo clique, então vai 
+precisar criar uma variavel em algum lugar pra armazenar o nome da
+tabela q está aberta no momento. Como não sei onde criar a tabela,
+por questão de organização, vou deixar pra tu fazer, ou qdo eu e vc
+estivermos on ao mesmo tempo, é bem basico na verdade.

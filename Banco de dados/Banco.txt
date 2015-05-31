@@ -1,0 +1,15 @@
+create database mysqltoolctg;
+
+use mysqltoolctg;
+
+drop table tbl_usuarios;
+
+create table tbl_usuarios(
+codigo integer auto_increment not null,
+login varchar(255),
+senha varchar(255),
+email varchar(255),
+nome varchar(255),
+chave varchar(255),
+primary key(codigo)
+);

@@ -1,0 +1,25 @@
+Nome da Equipe :
+Infinite Tools
+
+
+Irving Miranda Castro - 23 - 3A1 - 11000198
+Gabriel Augusto de Moura Soares - 14 - 3C1 - 11001577
+Renato Júnior Bruno Souto - 36 - 3A1 - 11003430
+Gabriel Ferreira Lima Silva - 15 - 3A1 - 11000309
+Bernardo Augusto de Oliveira Senna - 03 - 3A1 - 11003030
+Gabriel Porto Lopes - 16 - 3A1 - 11000848
+Marcus Vinícius Campos - 27 - 3A1 - 11000112
+Rodrigo Fonseca Marques - 37 - 3A1 - 11000724
+
+
+
+Título do Projeto: 
+MySql Tools
+
+
+
+
+Descrição do Projeto :
+O Sistema consiste em uma ferramenta para auxiliar na criação e manutenção de banco de dados e em códigos MySql. Proporciona o desenvolvimento em grupo, o que permite vários usuários manipular o mesmo projeto em tempo real. É possível ter um módulo para salvar os projetos em nuvem possibilitando assim, o(s) usuário(s) acessá-lo em qualquer lugar.
+
+[19:35:26] Marcão ( Cotemig ): RUbRYoimgTwQxmg6urBd

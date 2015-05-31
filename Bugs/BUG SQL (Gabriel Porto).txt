@@ -1,0 +1,14 @@
+Gabriel Porto
+
+1º	Comandos\Abri terminal (troca para abrir apensa uma ves) - (-Marcus:Corrigido)
+2º	Comando para fechar aba - (-Marcus: Feito hot key Ctrl + Delete)
+3º	Opções\Menu de Opçoes (tabPage1 "Sem utilidade") (-Marcus:Corrigido)
+4º	Opções\Menu de Opçoes\Janelas\tabPage4 ("SEm utilidade)	(-Marcus:Corrigigo)
+5º	Coloca como IP padrao em "Nova Conexão" como 127.0.0.1 (-Marcus: A Avaliar)
+6º	Trocar senha esta fechando o programa (-Marcus:Corrigido agora esta reiniciando o programa)
+7º	Na tela de login bloquear estender a tela para nao deformar a logo (-Marcus: Corrigido)
+
+--------------------------------------------------------------------------------------------------
+
+8º	Tablea: "Nome da tabela"\CMDs "Quando é digitado um espasso volta para o inicio"
+9º	Tablea: "Nome da tabela"\CMDs "Apaga a o datagrid da tela quando manda Executar"

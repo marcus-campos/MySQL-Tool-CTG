@@ -1,0 +1,348 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{E971D8BA-5F92-4943-B25C-3705854E389F}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MySqlToolCTG_IT</RootNamespace>
+    <AssemblyName>MySqlToolCTG-IT</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>LOGO.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <NoWin32Manifest>true</NoWin32Manifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MySql.Data, Version=6.3.6.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Release\MySql.Data.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Core">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Management" />
+    <Reference Include="System.Xml.Linq">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.CSharp">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Data">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Deployment">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Private>True</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BugTracker.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BugTracker.Designer.cs">
+      <DependentUpon>BugTracker.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CadastrarNovoUsuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CadastrarNovoUsuario.Designer.cs">
+      <DependentUpon>CadastrarNovoUsuario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CentralDeAjuda.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CentralDeAjuda.Designer.cs">
+      <DependentUpon>CentralDeAjuda.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CentralDeAjudaPDF.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CentralDeAjudaPDF.Designer.cs">
+      <DependentUpon>CentralDeAjudaPDF.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ControladorAcces.cs" />
+    <Compile Include="CriadorBanco.cs" />
+    <Compile Include="ControladorBanco.cs" />
+    <Compile Include="CriarBanco.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CriarBanco.Designer.cs">
+      <DependentUpon>CriarBanco.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CriarNovaConexao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CriarNovaConexao.Designer.cs">
+      <DependentUpon>CriarNovaConexao.cs</DependentUpon>
+    </Compile>
+    <Compile Include="encontrarHD.cs" />
+    <Compile Include="Encriptografia.cs" />
+    <Compile Include="FeedBack.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FeedBack.Designer.cs">
+      <DependentUpon>FeedBack.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InserirNoBanco.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InserirNoBanco.Designer.cs">
+      <DependentUpon>InserirNoBanco.cs</DependentUpon>
+    </Compile>
+    <Compile Include="novaTabela.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="novaTabela.Designer.cs">
+      <DependentUpon>novaTabela.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RecuperarSenha.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RecuperarSenha.Designer.cs">
+      <DependentUpon>RecuperarSenha.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Splash.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Splash.Designer.cs">
+      <DependentUpon>Splash.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TelaDeLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TelaDeLogin.Designer.cs">
+      <DependentUpon>TelaDeLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TrocarSenha.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TrocarSenha.Designer.cs">
+      <DependentUpon>TrocarSenha.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tutorial2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tutorial2.Designer.cs">
+      <DependentUpon>Tutorial2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tutorial1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tutorial1.Designer.cs">
+      <DependentUpon>Tutorial1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuOpcoes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuOpcoes.Designer.cs">
+      <DependentUpon>MenuOpcoes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Opcoes.cs" />
+    <Compile Include="SintaxHili.cs" />
+    <Compile Include="TelaPrincipal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TelaPrincipal.Designer.cs">
+      <DependentUpon>TelaPrincipal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Validadores.cs" />
+    <Compile Include="Logar.cs" />
+    <EmbeddedResource Include="BugTracker.resx">
+      <DependentUpon>BugTracker.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CadastrarNovoUsuario.resx">
+      <DependentUpon>CadastrarNovoUsuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CentralDeAjuda.resx">
+      <DependentUpon>CentralDeAjuda.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CentralDeAjudaPDF.resx">
+      <DependentUpon>CentralDeAjudaPDF.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CriarBanco.resx">
+      <DependentUpon>CriarBanco.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CriarNovaConexao.resx">
+      <DependentUpon>CriarNovaConexao.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FeedBack.resx">
+      <DependentUpon>FeedBack.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InserirNoBanco.resx">
+      <DependentUpon>InserirNoBanco.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="novaTabela.resx">
+      <DependentUpon>novaTabela.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RecuperarSenha.resx">
+      <DependentUpon>RecuperarSenha.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Splash.resx">
+      <DependentUpon>Splash.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TelaDeLogin.resx">
+      <DependentUpon>TelaDeLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TrocarSenha.resx">
+      <DependentUpon>TrocarSenha.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tutorial1.resx">
+      <DependentUpon>Tutorial1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuOpcoes.resx">
+      <DependentUpon>MenuOpcoes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="TelaPrincipal.resx">
+      <DependentUpon>TelaPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tutorial2.resx">
+      <DependentUpon>Tutorial2.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0,Profile=Client">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 Client Profile %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="AcroPDFLib">
+      <Guid>{05BFD3F1-6319-4F30-B752-C7A22889BCC4}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="AxAcroPDFLib">
+      <Guid>{05BFD3F1-6319-4F30-B752-C7A22889BCC4}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="AxShockwaveFlashObjects">
+      <Guid>{D27CDB6B-AE6D-11CF-96B8-444553540000}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="ShockwaveFlashObjects">
+      <Guid>{D27CDB6B-AE6D-11CF-96B8-444553540000}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="LOGO.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

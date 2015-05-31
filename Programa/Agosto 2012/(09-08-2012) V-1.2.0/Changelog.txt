@@ -1,0 +1,11 @@
+-Aumento de performance.
+-Menor consumo de memoria.
+-Adicionado dela de splash.
+-Aumento de segurança para envio de emails.
+-Aumento de performance para logar-se ao sistema (Retirada verificação WEB)
+-Finalizada tela de recuperar senha (Agora ela não fecha o programa ela apenas o reinicia).
+-Adicionado campos no banco de dados para verificar as ultimas sessões do usuario.
+-Finalizada tela para cadastrar novos usuarios.
+-Grande modificação de interface.
+
+[V-1.2.0]

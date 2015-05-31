@@ -1,0 +1,53 @@
+@charset "iso-8859-1";
+/* CSS Document */
+/* Autor(es): Marcus Vinicius Campos | V: 1.0 | 28/06/2012 */
+
+*{margin:0; padding:0; font-family:"Trebuchet MS", Arial, Helvetica, sans-serif}
+body{background:#F4F4F4}
+a{text-decoration:none;color:#999999}
+#top_bar{background:url(../img/top.png) repeat-x; height:33px; width:100%; display:block; position:absolute; top:0}
+#top_bar #logo01{background:url(../img/icons.png) no-repeat -104px -43px; width:113px; height:84px; margin:0 50px 0 50px; display:block; float:left;}
+#top_bar #menu_top_bots{float:right ; background:url(../img/icons.png) no-repeat -4px -4px; font-size:12px; text-align:center; width: 157px; height:27px; display:block; line-height:27px;}
+ul#menu_top{height:33px; line-height:33px; list-style:none; display:block;}
+ul#menu_top li a{float:left; background:url(../img/icons.png) no-repeat -3px -144px; width:86px; height:31px; text-align:center; font-size:12px;color:#999999;}
+ul#menu_top li a:hover{background:#F4F4F4}
+#menu_top_bots a{float:left ; background:url(../img/icons.png) no-repeat -4px -4px; font-size:12px; text-align:center; width: 157px; height:27px; display:block; line-height:27px;}
+#menu_top_bots a:hover{background:#F4F4F4}
+#menu_top_bots_b{width:314px; height:33px; display:block; float:right; margin-top:-30px; margin-right:10px}
+#home_body{width:800px; height:600;overflow:auto; margin:50px auto; display:block}
+/*
+Rodape da pagina
+*/
+#home_bot{background:url(../img/footer.png) repeat-x; width:100%; height:184px; position: fixed; display:block; bottom:0px; margin-top:30px}
+#home_bot #logo_bot{background:url(../img/logo.png) no-repeat; display:block; width:158px; height:158px; margin:10px 0 0 30px}
+#home_bot #home_creditos{font-size:15px; margin:0 auto; position:relative; display:block; right:0}
+
+/*
+ Pagina Home
+*/
+#login_box{background:#E9E9E9; float:right; width:215px; height:172px; top:35px; z-index:1000; right:135px; position:absolute; display:none; border:1.5px #999 solid;}
+
+#login_box_log{background:#E9E9E9; float:right; width:215px; height:172px; top:35px; z-index:1000; right:135px; position:absolute; display:none; border:1.5px #999 solid;}
+
+/*
+ Caixa do Login
+*/
+#login_text_box{background:url(../img/icons.png) no-repeat -5px -178px; display:block; width:148px; height:31px; border:none; margin:5px auto}
+#login_text_box:focus{outline:none;}
+/*
+Cadastro
+*/
+#cadastro_text_box{background:url(../img/icons.png) no-repeat -4px -4px; display:block; width:157px; height:27px; border:none; margin:5px auto}
+#cadastro_text_box:focus{outline:none;}
+imput[type="submit"]{margin-top:10px; cursor:pointer}
+/*
+Para todos
+*/
+#botoes{background:url(../img/icons.png) no-repeat -4px -79px; display:block; width:85px; height:26px; border:none;}
+#botoespainel{background:url(../img/icons.png) no-repeat -4px -4px; display:block; width:159px; height:29px};
+#chave_box{background:#E9E9E9; width:400px; height:300px; top:35px; z-index:1000; right:135px; position:absolute; display:block; border:1.5px #999 solid;}
+
+/*
+Home
+*/
+#caixaDeConteudo{width:780px; height:300px;background:url(../img/CaixaDeConteudo.png); border: 1px #CCC solid; margin:10px auto;}

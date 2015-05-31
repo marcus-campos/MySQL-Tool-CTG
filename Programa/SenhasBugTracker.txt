@@ -1,0 +1,9 @@
+Senha que fica no box de descrição: 
+
+{CONFIRMAR[CORRECAO]}
+
+Senha Libera Painel:
+
+%toolctg123%
+
+Apartir 1.9.2

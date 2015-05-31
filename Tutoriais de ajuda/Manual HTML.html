@@ -1,0 +1,222 @@
+<html>
+<head>
+<style>
+	.title{
+	color: blue;
+	}
+	.td{
+	font-size:14px;
+	}
+</style>
+<title>Como utilizar um banco de dados</title>
+</head>
+<body>
+<font face="arial" size="2">
+	<h2 align="center">Manual básico para utilização do banco de dados:</h2>
+	<br>
+		<fieldset>
+			<a href = "#Title1"><li> O que é um BANCO DE DADOS(BD) </a></li>
+			<a href = "#Title2"><li> Para que serve o banco de dados </a></li>
+			<a href = "#Title3"><li> Definições e Tipos de dados </a></li>
+			<a href = "#Title4"><li> O que são tabelas nos DBs </a></li>
+			<a href = "#Title5"><li> O que é uma Procedure </a></li>
+			<a href = "#Title6"><li> O que é uma Trigger </a></li>
+			<br>
+		<font size ="1">Clique para ser direcionado:</font>
+		
+		</fieldset>
+		<li><h4 id="Title1" class="title"> O que é um BANCO DE DADOS(BD): </li></h4>
+		<p> <span class="texto">
+		Banco de dados é um sistema que reúne e mantém organizado uma série de informações relacionadas a um determinado assunto.Um bom exemplo de banco de dados é uma lista telefônica, 
+		nela observamos todos os dados referentes a uma pessoa, organizados de acordo com as necessidades do usuário.
+		</span></p>
+		
+		<li><h4 id="Title2" class="title"> Para que serve o banco de dados: </li></h4>
+		<p> <span class="texto">
+		Um banco de dados serve para armazenar dados que se relacionam, são criados de acordo com a necessidade de cada sistema. É usado por quase todos os programas e é responsável por 
+		armazenar os dados que o usuário necessita para uso posterior.
+		</span></p>
+		
+		<p><h3> FUNÇÕES INTERNAS DO BANCO DE DADOS </h3></p>
+		<li><h4 id="Title3" class="title"> Definições e Tipos de dados: </li></h4>
+		<p> <span class="texto">
+		Os tipos de dados básicos para os atributos incluem numéricos, cadeia de caracteres (string), cadeia de bits, booleanos, data e horário.<br><br>
+		- Numéricos: <br>
+		Tipos de dados numéricos que englobam os números inteiros de vários tamanhos(INTERGER,TINYINT,SMALLINT,MEDIUMINT,BIGINT) e os números pontos flutuantes (reais) de várias precisões (FLOAT, REAL ou DOUBLE).
+		Os números formatados podem ser declarados pelo uso do NUMERIC (i,j), em que i é o número total de dígitos decimais, e o j refere-se ao número de dígitos depois do ponto decimal.
+		</br>
+		</br>
+		<table border=2>
+		<tr>
+		<td align="center" class="td"><b>TIPO</b></td>
+		<td align="center" class="td"><b>TAMANHO</b></td>
+		<td align="center" class="td"><b>Nº COM SINAIS</b></td>
+		<td align="center" class="td"><b>Nº SEM SINAIS</b></td>
+		</tr>
+		<tr>
+		<td align="center" class="td">TINYINT</td>
+		<td align="center" class="td">1 byte</td>
+		<td align="center" class="td">-128 a 127</td>
+		<td align="center" class="td">0 a 255</td>
+		</tr>
+		<tr>
+		<td align="center" class="td">SMALLINT</td>
+		<td align="center" class="td">2 bytes</td>
+		<td align="center" class="td">-32.768 a 32.767</td>
+		<td align="center" class="td">0 a 65.535</td>
+		</tr>
+		<tr>
+		<td align="center" class="td">MEDIUMINT</td>
+		<td align="center" class="td">3 bytes</td>
+		<td align="center" class="td">-8.388.608 a 8.388.607</td>
+		<td align="center" class="td">0 a 16.777.215</td>
+		</tr>
+		<tr>
+		<td align="center" class="td">BIGINT</td>
+		<td align="center" class="td">8 bytes</td>
+		<td align="center" class="td">-9.223.372.036.854.775.808 a<br>
+			9.223.372.036.854.775.807</td>
+		<td align="center" class="td">0 a<br> 
+			18.446.744.073.709.551.615</td>
+		</tr>
+		<tr>
+		<td align="center" class="td">NUMERIC</td>
+		<td align="center" class="td">Variável</td>
+		<td align="center" class="td">Ex : numeric (3) Numeric(5,2)</td>
+		<td align="center" class="td">999.999,999</td>
+		</tr>
+		<tr>
+		<td align="center" class="td">FLOAT</td>
+		<td align="center" class="td">4 bytes</td>
+		<td align="center" class="td">--</td>
+		<td align="center" class="td">--</td>
+		</tr>
+		<tr>
+		<td align="center" class="td">DOUBLE</td>
+		<td align="center" class="td">8 bytes</td>
+		<td align="center" class="td">--</td>
+		<td align="center" class="td">--</td>
+		</tr>
+		<tr>
+		<td align="center" class="td">REAL</td>
+		<td align="center" class="td">8 bytes</td>
+		<td align="center" class="td">--</td>
+		<td align="center" class="td">--</td>
+		</tr>
+		</table>
+		<br>
+		<br>
+		- Cadeia de caracteres: <br>
+		CHAR(n) - Utiliza-se este tipo de dados quando houver a necessidade de fazer uso de sequências de caracteres de tamanho fixo que estejam limitadas até 255 caracteres de comprimento. O parâmetro tamanho determina o valor máximo em caracteres que pode conter a sequência.<br>
+		VARCHAR(n) - Utiliza-se este tipo de dados quando houver a necessidade de fazer uso de sequências de caracteres de tamanho variável que estejam limitadas até 255 caracteres  de comprimento. A diferença entre esse tipo e o CHAR é que, neste caso, os espaços em branco excedentes do lado direito da sequência de caracteres não utilizados são automaticamente desprezados. O parâmetro tamanho determina o valor máximo em caracteres que pode conter a sequência.<br>
+		TEXT - Armazena cadeias de caracteres de qualquer comprimento, e não requer um limite superior explicitamente declarado de seu tamanho.
+		<br>
+		<br>
+		<table border=2>
+		<tr>
+		<td align="center" class="td"><b>TIPO</b></td>
+		<td align="center" class="td"><b>TAMANHO EXIGIDO</b></td>
+		</tr>
+		<tr>
+		<td align="center" class="td">CHAR (m)</td>
+		<td align="center" class="td">M bytes, 1<= M <= 255</td>
+		</tr>
+		<tr>
+		<td align="center" class="td">VARCHAR (m)</td>
+		<td align="center" class="td">L+1 bytes, onde L<= M e 1 <= M <=255</td>
+		</tr>
+		<tr>
+		<td align="center" class="td">TEXT</td>
+		<td align="center" class="td">L + 2 bytes, onde L < 2^16</td>
+		</tr>
+		</table>
+		<br>
+		<br>
+		Date e Time<br>
+		O tipo DATE(data) contém dez posições e seus comportamentos são YEAR (ano), MONTH (mês) e DAY  (dia) no formato YYYY:MM:SS.<br>
+		O tipo TIME(hora) tem oito posições com os componentes HOUR(hora), MINUTE(minuto), e SECOND(segundo) no formato HH:MM:SS<br>
+		<table border=2>
+		<tr>
+		<td align="center" class="td"><b>TIPO</b></td>
+		<td align="center" class="td"><b>TAMANHO EXIGIDO</b></td>
+		<td align="center" class="td"><b>EXEMPLO</b></td>
+		</tr>
+		<tr>
+		<td align="center" class="td">DATE</td>
+		<td align="center" class="td">3 bytes</td>
+		<td align="center" class="td">2010-01-20</td>
+		</tr>
+		<tr>
+		<td align="center" class="td">TIME</td>
+		<td align="center" class="td">3 bytes</td>
+		<td align="center" class="td">15:16:50</td>
+		</tr>
+		</table>
+		</span></p>
+		
+		<li><h4 id="Title4" class="title"> O que são tabelas nos banco de dados: </li></h4>
+		<p> <span class="texto">
+		A tabela é um conjunto de dados dispostos em número finito de colunas e número ilimitado de linhas. As colunas são consideradas os campos da tabela, e caracterizam os tipos de dados que deverão constar na tabela (nome, telefone, e-mail, endereço etc). O número de linhas são as combinações de valores dos campos da tabela, preenchendo as colunas de forma organizada (João,5555-5555,joão@hotmail.com,etc).<br>
+		Toda tabela deve ter uma chave primária, que é o campo que não pode repetir em nenhuma linha (um código interno criado para diferenciar os dados, CPF, RG, etc).<br><br>
+		Exemplo :<br>
+		create table tbl_contatos(<br>
+		codigo int auto_increment,<br>
+		nome varchar (255) not null,<br>
+		telefone bigint,<br>
+		email varchar(255),<br>
+		primary key (codigo)<br>
+		);<br>
+
+		</span></p>
+		
+		<li><h4 id="Title5" class="title"> O que é uma Procedure: </li></h4>
+		<p> <span class="texto">
+		Conhecida como Stored Procedure é uma coleção de comandos em SQL para facilitar o manuseio do banco de dados. Otimiza tarefas repetitivas, aceita parâmetros de entrada e pode retornar um valor (para indicar aceitação ou falha na execução). O procedimento armazenado pode reduzir o tráfego na rede, melhorar a performance, criar mecanismos de segurança, etc.<br><br>
+		Exemplo:<br>
+		CREATE PROCEDURE <i>proc_nome</i> ([<i>parametros</i>,...])<br>
+		[<i>caracteristicas</i>]<br>
+		[BEGIN]<br>
+			código;<br>
+		[END]<br>
+		<br>
+		<i>proc_nome</i>: seu procedimento armazenado deve ter um nome, para, quando for chamado podermos usá-lo.<br>
+		tipos de  parametros: existem três tipos de parâmetros em uma Procedure no MySql:<br>
+			- IN --> este é um parâmetro de entrada, ou seja, um parâmetro cujo valor será utilizado no interior do procedimento para produzir algum resultado.<br>
+			- OUT --> este parâmetro retorna algo de dentro do procedimento para o lado externo, colocando os valores manipulados disponíveis na memória ou no conjunto de resultados.<br>
+			- INOUT --> faz os dois trabalhos ao mesmo tempo.<br>
+		<i>parametros</i>: nesta parte da procedure, informamos os parâmetros da seguinte forma: [ IN | OUT | INOUT ] nome_parametro tipo_dado.<br>
+		<i>caracteristicas</i>: as características que o procedimento pode apresentar. Questões de segurança, se são determinísticas ou não, qual é a linguagem que estamos usando e se nossa procedure modificará dados no banco de dados são algumas das características que podemos definir neste item.<br>
+		<i>código</i>: onde são definidos os comandos SQL que farão alguma manipulação e/ou defenderão alguma lógica, podendo retornar ou não algum resultado.<br>
+
+		</span></p>
+		
+		<li><h4 id="Title6" class="title"> O que é uma Trigger </li></h4>
+		<p> <span class="texto">
+		Trigger é um recurso de programação executado sempre que o evento associado ocorrer, é um tipo especial de procedure, que é executado sempre que há uma tentativa de modificar os dados de uma tabela que é protegida por ele. <br>
+		É muito utilizada para ajudar a manter a consistência dos dados ou para propagar alterações em um determinado dado de uma tabela para outras. Um bom exemplo é um trigger criado para controle de quem alterou a tabela, nesse caso, quando a alteração for efetuada, a trigger é "disparada" e grava em uma tabela de histórico de alteração, o usuário e data/hora da alteração.<br>
+		<br>
+		CREATE TRIGGER <i>tgr_nome</i> ON <i>tbl_nome</i><br>
+		[<i>caracteristicas</i>] [<i>ativação</i>] (ex: AFTER INSERT)<br>
+		AS<br>
+		[<i>código</i>]<br>
+		<br>
+		<i>tgr_nome</i>: sua trigger armazenada deve ter um nome, para, quando for chamado podermos usá-lo.<br>
+		<i>tbl_nome</i>:  a tabela que será "protegida" pela trigger, assim que ocorrer uma mudança nessa tabela, a trigger será disparada.<br>
+		<i>caracteristicas</i>: as triggers são definidas para BEFORE (antes) ou AFTER (depois)<br>
+			As triggers BEFORE(antes)  disparam antes de as modificações da instrução serem aplicadas, e antes de qualquer restrição ser aplicada.<br>
+			As triggers AFTER(depois) disparam após todas as restrições terem sido satisfeitas, e após todas as alterações terem sido aplicadas à tabela de destino.<br>
+		<i>ativação</i>: a ativação da trigger está associada a um evento, sendo eles:<br>
+			- Insert<br>
+			- Update<br>
+			- Delete<br>
+		<i>código</i>: onde será colocado o código SQL, que fará a manipulação no banco.<br>
+		</span></p>
+		<br>
+	<h5>MySQL Tool CTG<br>
+		www.toolctg.com.br<br>
+		suporte@toolctg.com.br
+	</h5>
+
+</font>
+</body>
+</html>

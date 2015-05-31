@@ -1,0 +1,11 @@
+- autualizar as conexoes quando cria o usuario novo
+- mudar o icone quando o banco for selecionado
+- quano der erro na criação da tabela, exibir uma msg de erro 
+- modulo para alterar tabela
+- botao de delete pra deletar a tabela
+- mostrar um erro na sintaxe do CMD da tabela 
+- colocar uma sugestao pro usuario ligar o banco antes de ligar o programa
+- tirar lista de erro
+- tirar hilight 
+- clicar 2x na tela de comandos 
+- 

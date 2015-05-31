@@ -1,0 +1,7 @@
+MySqlToolCTG-IT Compilação 0.3.45
+
+
+Adicionado sistema de login agora você precisará usar o MySqlToolCTGInserirUsuarios 1.0.0 para cadastrar seu usuário para poder utilizar o programa.
+
+
+Senha para cadastrar: RUbRYoimgTwQxmg6urBd

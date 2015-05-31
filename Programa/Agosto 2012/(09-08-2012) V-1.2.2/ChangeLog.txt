@@ -1,0 +1,7 @@
+-Correção de alguns bugs.
+-Adicionado HotKey para fechar a tab selecionada.
+-Alteração tela de CMD de quando vc entra dentro de uma tabela.
+-Aumento em 11% da performace de executar comandos pelo CMD.
+-Adicionado Sintax Hili no CMD da tabela e no CMD do terminal.
+-Desativado segurança contra brutal inserts (Consumo execivo de memoria sem nececidade).
+-Adicionado comandos internos (secretos).

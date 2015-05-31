@@ -1,0 +1,16 @@
+Bug e validações necessárias:
+
+1 - Quando apagado um bando de dados, os demais desaparecem, e mesmo quando atualizado, eles não aparecem novamente. (-Marcus: Corrigido)
+
+2 - Quando criado um banco de dados com um nome invalido, por exempo, com um espaço "Banco de dados" o banco de dados não retorna nenhum erro.
+
+3 - É realmente necessário que o pragrama tenha que fechar apos a troca de senha?
+
+4 - Quando você abre um outro terminal, abre outra aba em branco com o mesmo nome, e anbas ficam em branco, acontece
+infinitamente.
+
+5 - Na aba comando o total de caracteres é atualizada quando tem auteração no texto, mas está sendo atulizado antes
+da nova caractere.
+
+6 - Na criação de tabela, pede que insira o tamanho do campo, quando ele estiver em branco. não é melhor que seja inserido 
+o maior valor possivel para o tipo de campo?

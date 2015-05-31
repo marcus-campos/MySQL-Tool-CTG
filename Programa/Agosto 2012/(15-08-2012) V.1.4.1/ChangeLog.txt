@@ -1,0 +1,5 @@
+-Adicionado rotina inteligente para deletar usuarios com 1 mes de inatividade.
+-Criado scripts para verificar a verção do programa e se ele tiver desatualizado ele executa outro programa para fazer o download e atualiza-lo.
+-Corrigido pequenos bugs.
+-Adicionado função para a tela de splash.
+-Aumento de performance para comunicação com o servidor.

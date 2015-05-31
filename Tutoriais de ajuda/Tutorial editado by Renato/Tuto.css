@@ -1,0 +1,95 @@
+Body {
+background-color: #1C1C1C;
+padding-left: 50px;
+padding-right: 50px;
+}
+
+.SuperTitle{
+font-family:calibri;
+color: #FFD700;
+}
+
+#Title1{
+font-family:calibri;
+color: #CD9B1D;
+}
+
+#Title2{
+font-family:calibri;
+color: #CD9B1D;
+}
+
+#Title3{
+font-family:calibri;
+color: #CD9B1D;
+}
+
+#Title4{
+font-family:calibri;
+color: #CD9B1D;
+}
+
+#Title5{
+font-family:calibri;
+color: #CD9B1D;
+}
+
+#Title6{
+font-family:calibri;
+color: #CD9B1D;
+}
+
+#Title7{
+font-family:calibri;
+color: #CD9B1D;
+}
+
+.Title{
+font-family:calibri;
+color: #CD9B1D;
+}
+
+.texto{
+padding-left: 25px;
+color: #FFF8DC;
+}
+
+.textoo{
+color: #FFF8DC;
+}
+
+.field1{
+border-color: #8B7500;
+border-right: 0px;
+}
+
+.field2{
+border-color: #8B7500;
+border-left: 0px;
+}
+
+.marca{
+color: #363636;
+text-align: right;
+}
+
+.mamba{
+color: #363636;
+text-align: center;
+}
+
+a:link{
+color: #FFF8DC;
+}
+
+a:visited{
+color: #FFF8DC;
+}
+
+a:hover{
+color: #F4A460;
+}
+
+a:active{
+color: #D2691E;
+}
